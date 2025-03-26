@@ -27,7 +27,7 @@ data "aws_ami" "ubuntu" {
 
 
 
-# Public EC2 Instance
+# Public EC2 Instances
 resource "aws_instance" "Jenkins_Server" {
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = "t2.medium"
